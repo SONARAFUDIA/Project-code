@@ -17,8 +17,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
     color: #727272;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     min-height: 2500px;
 }
 
@@ -29,7 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: rgba(69, 69, 69, 0.69);
+    border-bottom: 1px solid #ffffff;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +42,7 @@ body {
 }
 
 .navbar .navbar-logo {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #ffffff;
 }
@@ -62,20 +66,21 @@ body {
     min-height: 100vh;
     display: flex;
     text-align: center;
-    background-image: url(bg.jpg);
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
 
 }
 
-.main .content {
+.content {
     color: #ffffff;
     text-align: center;
+    position: relative;
     padding: 18% ;
     font-size: 2rem;
     text-shadow: 3px 3px 3px #303030;
 }
+
+/* .bg {
+    width: 100%;
+} */
 
 /* media queries */
 
@@ -85,15 +90,15 @@ body {
     html {
         font-size: 75%;
     }
-
+/* 
     #line-menu {
     display: none;
     color: #ffffff;
-    }
+    } */
 }
 
 
-/* tablet */
+/* tablet & phone */
 @media (max-width: 768px) {
     html {
         font-size: 62.5%;
@@ -101,6 +106,7 @@ body {
 
     #line-menu {
     display: inline-block;
+    color: #ffffff;
     }
 
     .navbar .navbar-nav {
@@ -108,8 +114,8 @@ body {
         top: 100%;
         right: -100%;
         background-color: #4f4f4f;
-        width: 30rem;
-        height: 25vh;
+        width: 20rem;
+        height: 500%;
         transition: 0.3s;
     }
 
@@ -127,9 +133,9 @@ body {
 
     .main .content {
         padding: 25% 10%;
+        font-size: 2rem;
     }
 }
-
 
 /* phone */
 @media (max-width: 450px) {
@@ -137,8 +143,8 @@ body {
         font-size: 55%;
     }
 
-    #line-menu {
-    display: inline-block;
+    .main .content {
+        margin-top: 50%;
     }
 
 }
