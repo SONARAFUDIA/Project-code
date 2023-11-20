@@ -18,7 +18,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #727272;
-    background-image: url(bg.jpg);
+    background-image:linear-gradient(0deg, rgba(15, 11, 14, 0.3), rgba(15, 11, 14, 0.3)), url(bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,6 +34,7 @@ body {
     align-items: center;
     padding: 1rem 5%;
     border-bottom: 1px solid #ffffff;
+    background-color: #00000081;
     position: fixed;
     top: 0;
     left: 0;
@@ -70,6 +71,7 @@ body {
 }
 
 .content {
+    
     color: #ffffff;
     text-align: center;
     position: relative;
@@ -113,7 +115,8 @@ body {
         position: absolute;
         top: 100%;
         right: -100%;
-        background-color: #4f4f4f;
+        background-color: #ffffff;
+        border-radius: 10px;
         width: 20rem;
         height: 500%;
         transition: 0.3s;
@@ -124,11 +127,11 @@ body {
     }
 
     .navbar .navbar-nav a {
-        color: #ffffff;
+        color: #303030;
         display: block;
         margin: 1.5rem;
         padding: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .main .content {
