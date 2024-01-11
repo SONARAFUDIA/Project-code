@@ -11,7 +11,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #727272;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bg.jpg);
+    background-image:url(bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(9, 9, 9, 0.607);
+    background-color: #FAF9F6;
     border-bottom: 1px solid #fff;
     align-items: center;
     position: fixed;
@@ -37,7 +37,7 @@ body {
     font-weight: 700;
     padding: 5px;
     padding-left: 20px;
-    color: #fff;
+    color: black;
 }
 
 .navbar .nav {
@@ -49,7 +49,7 @@ body {
 }
 
 .navbar ul li a{
-    color: #fff;
+    color: black;
     font-weight: 300;
     font-size: 1.5rem;
 }
@@ -60,7 +60,7 @@ body {
 
 #line-menu {
     display: none;
-    color: #fff;
+    color: black;
     padding: 5px;
 }
 
