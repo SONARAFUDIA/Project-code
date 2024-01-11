@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%), url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.container {
+    padding-top: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.container .navbar {
+    font-size: 2rem;
+    text-align: center
+}
+
+
+/* Hover */
+.navbar:hover
+{
+    cursor: pointer;
+    transition: .5s;
+    transform: translateY(-.5rem);
+}
+
+.navbar:hover .text a
+{
+    color: #5e7c60;
+}
+
+.navbar:hover .logo a
+{
+    color: #5e7c60;
+}
+
+/* Navbar Style */
+
+.navbar .logo a{
+    font-size: 4.5rem;
+    color: #000;
+}
+
+.navbar .text a{
+    font-weight: 700;
+    color: #000;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+}
+
+/* Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    /* .container {
+        display: block;
+    } */
+}
